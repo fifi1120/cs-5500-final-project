@@ -1,45 +1,20 @@
-.videos {
-    padding: 4rem;
-    background: #fff;
-  }
-  
-  h1 {
+.main-container{
+min-height: 700px;
+}
+
+
+.gallery-container{
+  background-image: url('../../../public/images/gallery-background.jpg');
+  background-size: contain;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gallery-title{
     text-align: center;
-  }
-  
-  .videos__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 80%;
-    margin: 0 auto;
-  }
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+} 
 
-
-  .videos__item {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 0 18rem;
-    max-width: 560px;
-    border-radius: 10px;
-    margin-left: 1%;
-    
-  }
-
-  
-  
-  @media only screen and (min-width: 1024px) {
-    .videos__items {
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .videos__item {
-      margin-bottom: 2rem;
-    }
-  }
-  
-  
