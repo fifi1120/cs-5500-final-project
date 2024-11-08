@@ -4,10 +4,11 @@ import Navbar from './components/Navbar';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/pages/Home';
-import Booking from './components/pages/Booking';
+import Booking from './components/pages/Booking/Booking';
 import CoffeeBasics from './components/pages/CoffeeBasics';
-import SignUp from './components/pages/SignUp';
+import SignUp from './components/pages/SignUp/SignUp';
 import Gallery from './components/pages/Gallery';
+
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Router>
 
         <Navbar />
+
         <Routes>
 
           <Route path='/' exact element={<Home />} />
@@ -24,7 +26,6 @@ function App() {
           <Route path='coffee-basics' element={<CoffeeBasics />} />
           <Route path='sign-up' element={<SignUp />} />
           <Route path='gallery' element={<Gallery />} />
-          
         </Routes>
 
 

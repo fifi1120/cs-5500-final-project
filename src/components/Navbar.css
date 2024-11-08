@@ -50,8 +50,8 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
+    justify-content: start;
+    margin-right: 1rem;
   }
   
   .nav-item {
@@ -179,3 +179,21 @@
       transition: 250ms;
     }
   }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Space between "SIGN UP" and the icons */
+}
+
+.navbar-icon {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-left: 17px; /* Space between each icon */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-icon:hover {
+    color: #ccc; /* Optional hover color for icons */
+}

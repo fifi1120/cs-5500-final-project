@@ -2,6 +2,13 @@ import React, { useState, useEffect} from 'react'
 import { Button } from './Button';
 import { Link } from 'react-router-dom'
 import './Navbar.css';
+import { FaRegUser } from 'react-icons/fa';
+import { GrSearch } from "react-icons/gr";
+import { FiShoppingBag } from "react-icons/fi";
+
+
+
+
 
 function Navbar() {
 
@@ -59,6 +66,11 @@ window.addEventListener('resize', showButton);
                         </li>
                     </ul>
                     {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    <div className="navbar-icons">
+                        <GrSearch className="navbar-icon" />
+                        <FaRegUser className="navbar-icon" />
+                        <FiShoppingBag className="navbar-icon" />
+                    </div>
                 </div>
             </nav>
         </>
