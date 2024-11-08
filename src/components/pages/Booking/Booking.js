@@ -2,7 +2,7 @@ import React from "react";
 import '../../../App.css';
 import { Button } from "./BookingButtons";
 import './Booking.css';
-import { BsPersonStanding } from "react-icons/bs";
+import Footer from "../../Footer";
 
 
 
@@ -44,6 +44,7 @@ export default function Booking() {
                     <img src="./images/review.png" alt="Reviews" className="full-width-image" />
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
