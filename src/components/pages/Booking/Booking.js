@@ -1,6 +1,6 @@
 import React from "react";
 import '../../../App.css';
-import {Button} from "./BookingButtons";
+import { Button } from "./BookingButtons";
 import './Booking.css';
 import { BsPersonStanding } from "react-icons/bs";
 
@@ -11,25 +11,25 @@ export default function Booking() {
         <>
             <div className='booking-container'>
 
-                <h1>BOOK TODAY!</h1>
+                <h1>BOOK US TODAY!</h1>
                 <div className='hero-btns'>
                     <Button
                         className='btns'
                         buttonStyle='btn--outline'
                         buttonSize='btn--large'
                     >
-                        INDIVIDUALS ( 1-3 <BsPersonStanding className="icon" /> )
+                        INDIVIDUALS ( 1-3 <i className='fa-sharp fa-solid fa-person' /> )
                     </Button>
                     <Button
-            className='btns'
-            buttonStyle='btn--primary'
-            buttonSize='btn--large'
-        >
-            <span className="button-content">
-                TEAM BUILDING ( 3 <BsPersonStanding className="icon" />)
-            </span>
-        </Button>
+                        className='btns'
+                        buttonStyle='btn--outline'
+                        buttonSize='btn--large'
+                    >
+                        TEAM BUILDING ( 4-12 <i className='fa-sharp fa-solid fa-person' /> )
+                    </Button>
                 </div>
+
+                    
             </div>
         </>
     )
