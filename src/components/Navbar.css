@@ -197,3 +197,65 @@
 .navbar-icon:hover {
     color: #ccc; /* Optional hover color for icons */
 }
+
+.navbar-icon-link {
+  display: flex;
+  align-items: center;
+  margin-left: 2px; /* Same spacing as other icons */
+  text-decoration: none;
+}
+
+/* Search bar dropdown */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80px; /* Adjust as needed to align with navbar */
+  left: 0;
+  right: 0;
+  background-color: #000;
+  padding: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 998;
+}
+
+.search-input-container {
+  position: relative;
+  width: 60%;
+  max-width: 800px;
+  margin-right: 10px; /* Adds space between the search bar and close button */
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  padding-right: 35px; /* Space for the search icon on the right */
+  box-sizing: border-box;
+}
+
+/* Position the search icon inside the input field */
+.search-icon-inside {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Close button positioned next to the search bar */
+.close-search-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
