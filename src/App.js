@@ -7,7 +7,7 @@ import Booking from './components/pages/Booking/Booking';
 import CoffeeBasics from './components/pages/CoffeeBasics';
 import SignUp from './components/pages/SignUp/SignUp';
 import Gallery from './components/pages/Gallery';
-
+import ShoppingCart from "./components/pages/ShoppingCart/ShoppingCart";
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
           <Route path='coffee-basics' element={<CoffeeBasics />} />
           <Route path='sign-up' element={<SignUp />} />
           <Route path='gallery' element={<Gallery />} />
+          <Route path="/cart" element={<ShoppingCart />} /> 
         </Routes>
 
 

@@ -28,12 +28,21 @@ export default function Booking() {
                         TEAM BUILDING ( 4-12 <i className='fa-sharp fa-solid fa-person' /> )
                     </Button>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-<p>check our reviews</p>
-                    
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>Check Our Reviews</p>
+            </div>
+            <div>
+            <div className="image-container">
+                    <img src="./images/review.png" alt="Reviews" className="full-width-image" />
+                </div>
             </div>
         </>
     )
