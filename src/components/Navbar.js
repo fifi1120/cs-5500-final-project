@@ -79,8 +79,9 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    
                     <div className="navbar-icons">
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                         <div onClick={toggleSearch} className="navbar-icon-link">
                             <GrSearch className="navbar-icon" />
                         </div>
