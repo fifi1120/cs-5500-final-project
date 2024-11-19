@@ -6,6 +6,25 @@ df-messenger {
     --df-messenger-chat-background-color: #FFF5E1; /* Light cream background for chat window */
     --df-messenger-font-color: #5C4033; /* Dark brown for general font color */
     --df-messenger-send-icon: #8B5E3C; /* Light brown for the send button icon */
+
+    /* Position and size adjustments */
+    position: fixed !important;
+    bottom: 50% !important;
+    right: 50% !important;
+    transform: translate(50%, 50%) !important;
+    width: 360px !important;
+    height: 600px !important;
+    z-index: 1000 !important;
+}
+
+/* Chatbot Container Styling - ensure it expands to new size */
+df-messenger .df-messenger-wrapper {
+    width: 100%; /* Expand to fill the df-messenger tag */
+    height: 100%; /* Expand to fill the df-messenger tag */
+    max-width: 360px; /* Max width same as the container */
+    max-height: 600px; /* Max height same as the container */
+    border-radius: 15px !important; /* Rounded chat window */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the chat window */
 }
 
 /* Chat Window Title Styling */
@@ -55,12 +74,6 @@ df-messenger .df-messenger-wrapper .df-input-placeholder {
 df-messenger .df-messenger-wrapper .df-send-icon {
     background-color: #8B5E3C !important; /* Light brown background for send button */
     border-radius: 50%; /* Round send button */
-}
-
-/* Styling Chatbot Container */
-df-messenger .df-messenger-wrapper {
-    border-radius: 15px !important; /* Rounded chat window */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the chat window */
 }
 
 /* Styling the Quick Replies */
