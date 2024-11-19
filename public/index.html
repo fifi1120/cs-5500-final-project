@@ -9,53 +9,59 @@
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <script src="https://kit.fontawesome.com/282dd23d4f.js" crossorigin="anonymous"></script>
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+  
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>React App</title>
-  <!-- Calendly badge widget begin -->
+  
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/bigweijian/coffee-101', text: 'Check our availability', color: '#ff9300', textColor: '#ffffff' }); }</script>
-  <!-- Calendly badge widget end -->
+  <script type="text/javascript">
+    window.onload = function() {
+      Calendly.initBadgeWidget({
+        url: 'https://calendly.com/bigweijian/coffee-101',
+        text: 'Check our availability',
+        color: '#ff9300',
+        textColor: '#ffffff'
+      });
+    };
+  </script>
+  
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  
+  <style>
+    df-messenger {
+        --df-messenger-bot-message: #FFF5E1;
+        --df-messenger-button-titlebar-color: #8B5E3C;
+        --df-messenger-button-titlebar-font-color: #FFF5E1;
+        --df-messenger-chat-background-color: #FFF5E1;
+        --df-messenger-font-color: #5C4033;
+        --df-messenger-send-icon: #8B5E3C;
+
+        position: fixed !important;
+        bottom: 50% !important;
+        right: 50% !important;
+        transform: translate(50%, 50%) !important;
+        width: 360px !important;
+        height: 600px !important;
+        z-index: 1000;
+    }
+  </style>
+  
+  <title>React App</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <df-messenger
-  intent="WELCOME"
-  chat-title="NewAgent"
-  agent-id="6f1553de-722e-4b90-98de-381e29e564eb"
-  language-code="en"
+    intent="WELCOME"
+    chat-title="Let's chat!"
+    agent-id="6f1553de-722e-4b90-98de-381e29e564eb"
+    language-code="en"
   ></df-messenger>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 
 </html>
