@@ -34,11 +34,18 @@
   <script
     type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/bigweijian/coffee-101', text: 'Check our availability', color: '#ff9300', textColor: '#ffffff' }); }</script>
   <!-- Calendly badge widget end -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <df-messenger
+  intent="WELCOME"
+  chat-title="NewAgent"
+  agent-id="6f1553de-722e-4b90-98de-381e29e564eb"
+  language-code="en"
+  ></df-messenger>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

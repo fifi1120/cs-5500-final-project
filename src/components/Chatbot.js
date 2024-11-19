@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // OpenAI API Key
-const OPENAI_API_KEY = 'your_openai_api_key_here';
+const OPENAI_API_KEY = 'your_openai_api_key_here'; // Please update here using your api key
 
 // Dialogflow Webhook endpoint
 app.post('/webhook', async (req, res) => {
@@ -77,7 +77,7 @@ async function handleGeneralInquiry(query, res) {
     } catch (error) {
         console.error("Error calling OpenAI API:", error);
         return res.json({
-            fulfillmentText: "Sorry, I couldn't process your request right now."
+            fulfillmentText: "Sorry, I couldn't process your request right now. Please try later"
         });
     }
 }
